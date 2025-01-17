@@ -1,0 +1,110 @@
+/* General Body Styling */
+body {
+    background: linear-gradient(135deg, #6a1b9a, #8e24aa);
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  /* Header Styling */
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  
+  /* Label Styling */
+  label {
+    display: block;
+    margin: 15px 0 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #e1bee7;
+    text-align: left;
+  }
+  
+  /* Textarea Styling */
+  textarea {
+    width: calc(100% - 20px);
+    height: 60px;
+    border: 1px solid #8e24aa;
+    border-radius: 5px;
+    padding: 10px;
+    background: #ffffff;
+    color: #6a1b9a;
+    font-size: 14px;
+    resize: none;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #8e24aa;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #6a1b9a;
+    transform: scale(1.05);
+  }
+  
+  /* Timer Styling */
+  .timer {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #d1c4e9;
+    font-weight: bold;
+    background: #7b1fa2;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+  }
+  
+  /* Blocked Items Section */
+  textarea:focus,
+  button:focus {
+    outline: none;
+    border: 2px solid #b39ddb;
+  }
+  
+  /* Divider for Sections */
+  hr {
+    border: none;
+    height: 2px;
+    background: #d1c4e9;
+    margin: 20px 0;
+  }
+  
+  /* Add subtle animations */
+  body,
+  textarea,
+  button,
+  .timer {
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

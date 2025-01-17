@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Websites Blocker DLP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Prevention</h1>
+  <label>
+    Blocked Websites (comma-separated):
+    <textarea id="blocked-websites"></textarea>
+  </label>
+  <label>
+    Blocked File Types (comma-separated, e.g., .pdf, .docx):
+    <textarea id="blocked-extensions"></textarea>
+  </label>
+  <button id="save-settings">Save Settings</button>
+
+  <div class="timer">
+    <span>Focus Timer: </span>
+    <span id="minutes">00</span>:<span id="seconds">00</span>
+  </div>
+
+  <script src="popup.js"></script>
+  <script src="App.js"></script>
+</body>
+</html>

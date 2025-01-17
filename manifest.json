@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "Trial DLP Extension",
+    "version": "0.2.0",
+    "permissions": [
+      "storage",
+      "tabs",
+      "<all_urls>"
+    ],
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "browser_action": {
+      "default_popup": "Popup.html",
+      "default_title": "Websites Blocker"
+    }
+  }
+  
